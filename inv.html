@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pip-boy</title>               <!--Title on the tab-->
+        <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/pipboy.app.css">
+        <script src="https://code.jquery.com/jquery.js" ></script>
+        <script src="../js/bootstrap.js"></script>
+        <meta name="viewport" content="width=device-width ,initial-scale=1" />
+
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <nav class="navbar navbar-expand-lg navbar-light">                  <!--NAVBAR classes-->
+            <div class="container-fluid" id="mainNav" >              <!--DIV classes-->
+                <ul class="navbar-nav mr-auto">
+                    <li id="navi"  class="nav-item">  
+                        <a class="nav-link" href="index.html">STAT</a>                  <!--STAT link-->
+                    </li>
+                    <li id="navi" class="navi2 nav-item ">
+                        <a class="nav-link" href="inv.html">INV</a>                       <!--INVENTORY link-->
+                    </li>
+                    <li id="navi"  class="nav-item" >
+                        <a class="nav-link" href="data.html">DATA</a>                       <!--DATA link-->
+                    </li>
+                    <li id="navi"  class="nav-item" >
+                        <a class="nav-link" href="map.html">MAP</a>                       <!--MAP link-->
+                    </li>
+                    <li id="navi"  class="nav-item" >
+                        <a class="nav-link" href="radio.html">RADIO</a>                       <!--RADIO link-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--NAVIGATION BAR-->
+
+        <!--SECONDARY NAVIGATION BAR-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+
+
+                    <ul class="nav nav-tabs" >
+                        <li id="navi" class="nav-item" >
+                            <a class="nav-link" href="#status" data-toggle="tab">WEAPON</a>    <!--WEAPON sublink-->
+                        </li>
+                        <li id="navi" class="nav-item">
+                            <a class="nav-link" href="#special" data-toggle="tab" >ARMOR</a>  <!--ARMOR sublink-->
+                        </li>
+                        <li id="navi" class="nav-item" >
+                            <a  class="nav-link" href="#perks" data-toggle="tab">AID</a>  <!--AID sublink-->
+                        </li>
+                    </ul>
+        <!--SECONDARY NAVIGATION BAR-->
+
+        <!--PUT THE CONTENT ON STATUS-->
+        <div class="tab-content">
+            <div class="tab-pane full active" id="status" role="tabpanel">
+                <ul class="item-list">
+                    <li><a class="44_pistol" href="#">44 Pistol</a></li>
+                    <li><a class="10mm_pistol" href="#">10mm pistol</a></li>
+                    <li><a class="assault_riffle" href="#">Assault Riffle</a></li>
+                    <li><a class="Fragmentation_Grenade" href="#">Fragmentation Grenade</a></li>
+                    <li><a class="Security_Baton" href="#">Security Baton</a></li>
+
+                </ul>
+
+                <div class="item-stats">
+                    <div class="row-highlight">
+                        <div class="row">
+                        <div  class="col-6">Damage</div>
+                        <div class="col-6 damage">48</div>
+                        </div>
+
+                        <div class="row-highlight">
+                            <div class="row">
+                            <div  class="col-6">Value</div>
+                            <div class="col-6 value">99</div>
+                            </div>
+                        </div>
+
+                        <div class="row-highlight">
+                            <div class="row">
+                            <div  class="col-6">Fire Rate</div>
+                            <div class="col-6 fire-rate">6</div>
+                            </div>
+
+                            <div class="row-highlight">
+                                <div class="row">
+                                <div  class="col-6">Range</div>
+                                <div class="col-6 range">119</div>
+                                </div>
+                            </div>
+
+                            <div class="row-highlight">
+                                <div class="row">
+                                <div  class="col-6">Accuracy</div>
+                                <div class="col-6 accuracy">66</div>
+                                </div>
+                            </div>
+
+                            <div class="row-highlight">
+                                <div class="row">
+                                <div  class="col-6">Weight</div>
+                                <div class="col-6 weight">4.2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="../js/pipboy.app.js"></script>
+
+                </body>
+</html>

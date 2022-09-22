@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pip-boy</title>               <!--Title on the tab-->
+        <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/pipboy.app.css">
+        <script src="https://code.jquery.com/jquery.js" ></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/pipboy.app.js"></script>
+        <meta name="viewport" content="width=device-width ,initial-scale=1" />
+
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <nav class="navbar navbar-expand-lg navbar-light">                  <!--NAVBAR classes-->
+            <div class="container-fluid" id="mainNav" >              <!--DIV classes-->
+                <ul class="navbar-nav mr-auto">
+                    <li id="navi"  class="navi1 nav-item active">  
+                        <a class="nav-link" href="index.html">STAT</a>                  <!--STAT link-->
+                    </li>
+                    <li id="navi" class=" nav-item ">
+                        <a class="nav-link" href="inv.html">INV</a>                       <!--INVENTORY link-->
+                    </li>
+                    <li id="navi"  class=" nav-item" >
+                        <a class="nav-link" href="data.html">DATA</a>                       <!--DATA link-->
+                    </li>
+                    <li id="navi"  class=" nav-item" >
+                        <a class="nav-link" href="map.html">MAP</a>                       <!--MAP link-->
+                    </li>
+                    <li id="navi"  class=" nav-item" >
+                        <a class="nav-link" href="radio.html">RADIO</a>                       <!--RADIO link-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--NAVIGATION BAR-->
+
+        <!--SECONDARY NAVIGATION BAR-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+
+
+                    <ul class="nav nav-tabs" >
+                        <li id="navi" class="nav-item" >
+                            <a class="nav-link" href="#status" data-toggle="tab">STATUS</a>    <!--STATUS sublink-->
+                        </li>
+                        <li id="navi" class="nav-item">
+                            <a class="nav-link" href="#special" data-toggle="tab" >SPECIAL</a>  <!--SPECIAL sublink-->
+                        </li>
+                        <li id="navi" class="nav-item" >
+                            <a  class="nav-link" href="#perks" data-toggle="tab">PERKS</a>  <!--PERKS sublink-->
+                        </li>
+                    </ul>
+        <!--SECONDARY NAVIGATION BAR-->
+
+        <!--PUT THE CONTENT ON STATUS-->
+        <div class="tab-content">
+            <div class="tab-pane active" id="status" role="tabpanel">
+                <div class="center-image">
+                    <img src="../img/pipboy2.jpg">
+                </div>
+
+
+            <div class="stat-bars">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w70" ></div>
+                            </div>                                                                <!--TOP bar-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w50" ></div>
+                            </div>                                                            <!--LATERAL LEFT 1 bar-->
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-bar">
+
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w70" ></div>
+                            </div>                                                              <!--LATERAL RIGHT 1 bar-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w30" ></div>
+                            </div>                                                               <!--LATERAL LEFT 2 bar-->
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="stat-bar">
+
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w40" ></div>
+                            </div>                                                               <!--LATERAL RIGHT 2 bar-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w90" ></div>
+                            </div>                                                                <!--BOTTOM bar-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row stat-numbers">
+                <div class="spacer-numbers"></div>
+                <div class="col-2">
+                    <img src="../img/gun.png" class="img-responsive">
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img src="../img/crosshair.jpg" class="img-responsive sm-image">
+                    </div>
+                    <div class="points">18</div>
+                </div>
+                <div class="col-1 transparent"></div>    <!--ONE COLUMN SPACE-->
+                <div class="col-2">
+                    <img src="../img/helmet.png" class="helmet-icon img-responsive">
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img src="../img/energy.png" class="img-responsive sm-image">
+                    </div>       <!--ENERGY RESISTANCE-->
+                    <div class="points">18</div>
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img src="../img/radiation.jpg" class="img-responsive sm-image">
+                    </div>        <!--RADIATION-->
+                    <div class="points">18</div>
+                </div>
+
+                <div class="col-2 transparent"></div>
+            </div>
+
+
+
+            </div>          <!--PUT THE CONTENT ON STATUS-->
+
+            <!--SPECIAL content-->
+            <div class="tab-pane" id="special" role="tabpanel">
+            
+                <ul class="item-list">
+                    <li><a class="strenght" id="box" href="#">Strenght <div id="box2">6</div> </a></li>
+                    <li><a class="perception" id="box"href="#">Perception <div id="box2">5</div></a></li>
+                    <li><a class="endurance" id="box"href="#">Endurance <div id="box2">2</div></a></li>
+                    <li><a class="charisma" id="box"href="#">Charisma <div id="box2">3</div></a></li>
+                    <li><a class="intelligence" id="box"href="#">Intelligence <div id="box2">3</div></a></li>
+                    <li><a class="agility" id="box"href="#">Agility <div id="box2">5</div></a></li>
+                    <li><a class="luck" id="box"href="#">Luck <div id="box2">5</div></a></li>
+
+                </ul>
+
+            
+            <div id="information">
+                fsahvja
+            </div>
+
+
+
+        </div>    
+                <!--SPECIAL content-->
+
+
+                <!--PERKS CONTENT-->
+            <div class="tab-pane" id="perks" role="tabpanel">perks
+
+
+
+
+
+
+
+            </div>                   
+            <!--PERKS CONTENT-->
+        </div>
+
+                    </div>
+                        </div>
+                            </div>
+        <!--PUT THE CONTENT -->
+
+
+
+
+
+        <!--FOOTER-->
+            <nav class="navbar-expand-lg navbar-light pip-footer ">
+                <div class="row">
+                    <div id="footer" class="col-3">HP 90/90</div>                                          <!--HP info-->
+                    <div id="footer" class="col-6">  <span>LEVEL 1</span>
+                          <div class="level-progress">
+                              <div class="level-progress-indicator" width="70%"></div>
+                          </div> </div>       <!--LVL PROGRESS bar-->
+                    <div id="footer" class="col-3 text-right">AP 50/50</div>
+                </div>
+            </nav>
+        <!--FOOTER-->
+    </body>
+</html>

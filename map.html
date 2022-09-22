@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pip-boy</title>               <!--Title on the tab-->
+        <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/pipboy.app.css">
+        <link rel="stylesheet" href="../css/map.css">
+
+        <script src="https://code.jquery.com/jquery.js" ></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/pipboy.app.js"></script>
+        <script src="../js/map.js"></script>
+        <meta name="viewport" content="width=device-width ,initial-scale=1" />
+
+
+
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <script type="module" src="./index.js"></script>
+
+
+
+
+    </head>
+    <body>
+        <!--NAVIGATION BAR-->
+        <nav class="navbar navbar-expand-lg navbar-light">                  <!--NAVBAR classes-->
+            <div class="container-fluid" id="mainNav" >              <!--DIV classes-->
+                <ul class="navbar-nav mr-auto">
+                    <li id="navi"  class="nav-item">  
+                        <a class="nav-link" href="pipboy.html">STAT</a>                  <!--STAT link-->
+                    </li>
+                    <li id="navi" class="nav-item">
+                        <a class="nav-link" href="inv.html">INV</a>                       <!--INVENTORY link-->
+                    </li>
+                    <li id="navi"  class="nav-item" >
+                        <a class="nav-link" href="data.html">DATA</a>                       <!--DATA link-->
+                    </li>
+                    <li id="navi"  class="navi4 nav-item active" >
+                        <a class="nav-link" href="map.html">MAP</a>                       <!--MAP link-->
+                    </li>
+                    <li id="navi"  class="nav-item" >
+                        <a class="nav-link" href="radio.html">RADIO</a>                       <!--RADIO link-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--NAVIGATION BAR-->
+
+      
+        <!--The div element for the map -->
+        <div id="map"></div>
+    
+        <!-- 
+         The `defer` attribute causes the callback to execute after the full HTML
+         document has been parsed. For non-blocking uses, avoiding race conditions,
+         and consistent behavior across browsers, consider loading using Promises
+         with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+        -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+          defer
+        ></script>
+
+
+
+      
+                
+        <nav class="navbar-expand-lg navbar-light pip-footer ">
+            <div class="row">
+                <div id="footer" class="col-3 "><span id="date"></span>          
+                <script>
+                    n =  new Date();
+                    y = n.getFullYear();
+                    m = n.getMonth() + 1;
+                    d = n.getDate();
+                    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+                   </script></div>
+                <!--HP info-->
+                <div id="footer" class="col-6">  <span id="date-time"></span> 
+                    <script>
+                        var dt = new Date();
+                        document.getElementById('date-time').innerHTML=dt;
+                        </script> </div>       <!--LVL PROGRESS bar-->
+                <div id="footer" class="col-3 text-right">   </div>
+            </div>
+        </nav>
+    <!--FOOTER-->
+</body>
+</html>          
